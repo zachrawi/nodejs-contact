@@ -7,7 +7,7 @@ getContacts = () => {
     const strContacts = localStorage.getItem('contacts');
 
     let contacts = null;
-    if (strContacts.trim().length > 0) {
+    if (strContacts !== null && strContacts.trim().length > 0) {
         contacts = JSON.parse(strContacts);
     }
 
